@@ -70,3 +70,7 @@ html {
     padding: 20px;
     box-sizing: border-box;
 }
+
+.custom-link {
+    color: red;
+  }
