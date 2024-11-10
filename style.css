@@ -1,0 +1,72 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* コンテナの中央寄せ */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ヘッダーのスタイル */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* セクションのスタイル */
+section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+h2 {
+    color: #4a90e2;
+    font-size: 1.5em;
+}
+
+/* リンクのスタイル */
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.profile-photo {
+    width: 150px;          /* 写真の幅 */
+    height: 150px;         /* 写真の高さ */
+    border-radius: 50%;    /* 円形にする */
+    display: block;
+    margin: 0 auto 10px;   /* 中央寄せと下に余白 */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-height: 90vh; /* 全体の高さを制限 */
+    overflow-y: auto; /* 縦スクロールを許可 */
+    padding: 20px;
+    box-sizing: border-box;
+}
