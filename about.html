@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>自己について</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <section id=about class="about">
             <h2>自己紹介</h2>
-            <p>はじめまして！です。</p>
+            <p>はじめまして！す。</p>
             <p>勉強のためにHPを更新します。</p>
             <p>今勉強している言語 HTML/css,JavaScript</p>
         </section>
         <a href="index.html" class="custom-link">戻る</a>
     </div>
+    <section id="skills" class="skills">
+        <h2>スキル</h2>
+        <div>
+            <label for="html">HTML</label>
+            <input type="range" id="html" name="html" min="0" max="100" value="80">
+            <span id="htmlValue">80%</span>
+        </div>
+        <div>
+            <label for="css">CSS</label>
+            <input type="range" id="css" name="css" min="0" max="100" value="70">
+            <span id="cssValue">70%</span>
+        </div>
+        <div>
+            <label for="js">JavaScript</label>
+            <input type="range" id="js" name="js" min="0" max="100" value="60">
+            <span id="jsValue">60%</span>
+        </div>
+    </section>
+    <script>
+        // スライダーの値が変更されたときに表示を更新
+        document.getElementById('html').addEventListener('input', function() {
+            document.getElementById('htmlValue').textContent = this.value + '%';
+        });
+        document.getElementById('css').addEventListener('input', function() {
+            document.getElementById('cssValue').textContent = this.value + '%';
+        });
+        document.getElementById('js').addEventListener('input', function() {
+            document.getElementById('jsValue').textContent = this.value + '%';
+        });
+    </script>
 </body>
+
 </html>
