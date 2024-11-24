@@ -74,3 +74,21 @@ html {
 .custom-link {
     color: red;
   }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: white;
+}
+
+.dark-theme header {
+    background-color: #222;
+}
+
+.dark-theme a {
+    color: lightblue;
+}
